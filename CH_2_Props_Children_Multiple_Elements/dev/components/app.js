@@ -17,7 +17,6 @@ export default class App extends Component {
 
                 {/* Child count */}
                 <div>Total Children: {this.props.children.length}</div>
-                <hr>
 
                 {/* Read individual child */}
                 <div>First child: {this.props.children[0]}</div>

@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
     devServer: {
         inline: true,
-        contentBase: './src',
+        contentBase: './www',
         port: 7000
     },
     entry: './dev/index.js',
@@ -18,7 +18,7 @@ module.exports = {
         ]
     },
     output: {
-        path: './src',
+        path: './www',
         filename: 'scripts/bundle.min.js'
     }
 };
