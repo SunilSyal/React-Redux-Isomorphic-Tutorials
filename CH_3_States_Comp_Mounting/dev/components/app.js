@@ -23,7 +23,7 @@ export default class App extends Component {
     }
 
     incAge () {
-      //this.state.age++;
+      //this.state.age++; // Using only this commnad will not re-render the componenet
       var age = this.state.age + 1;
       this.setState({age});
     }
