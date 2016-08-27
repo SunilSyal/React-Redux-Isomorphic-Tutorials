@@ -25,7 +25,7 @@ export default class App extends Component {
 
             <p> { this.state.name } likes <b>{ this.state.passion }</b></p>
 
-            <Passion changePassion = {this.changePassion.bind(this)} passion={ this.state.passion }></Passion>
+            <Passion changePassionProp = {this.changePassion.bind(this)} passion={ this.state.passion }></Passion>
 
           </div >
         );

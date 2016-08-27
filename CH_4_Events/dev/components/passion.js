@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Passion extends Component {
 
     triggerChange (evt) {
-        this.props.changePassion (evt.target.value);
+        this.props.changePassionProp (evt.target.value);
     }
 
     render() {
