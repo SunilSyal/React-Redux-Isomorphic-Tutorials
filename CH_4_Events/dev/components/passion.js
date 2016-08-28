@@ -10,7 +10,7 @@ export default class Passion extends Component {
         return (
           <div>
 
-            <select id="lang" onChange={this.triggerChange.bind(this)} value={this.props.passion}>
+            <select id="lang" onChange={this.triggerChange.bind(this)} value={this.props.passionProp}>
                 <option value="">Submit something new...</option>
                 <option value="Scripting">Scripting</option>
                 <option value="Cricket">Cricket</option>
@@ -18,7 +18,7 @@ export default class Passion extends Component {
              </select>
 
             <p>
-              <input value={this.props.passion} onChange={this.triggerChange.bind(this)}></input>
+              <input value={this.props.passionProp} onChange={this.triggerChange.bind(this)}></input>
             </p>
 
           </div >

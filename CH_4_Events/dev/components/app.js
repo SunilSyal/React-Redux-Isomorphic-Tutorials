@@ -17,6 +17,10 @@ export default class App extends Component {
       this.setState ({ passion })
     }
 
+    triggerChange (evt) {
+        this.changePassion (evt.target.value);
+    }
+
     render() {
         return (
           <div>
@@ -25,9 +29,15 @@ export default class App extends Component {
 
             <p> { this.state.name } likes <b>{ this.state.passion }</b></p>
 
+            <p>
+              <input value={this.state.passion} onChange={this.triggerChange.bind(this)}></input>
+            </p>
+
+            <p>=============================</p>
+
             { /* Using Prop as suffix to make it clear that it is a prop - changePassionProp */ }
 
-            <Passion changePassionProp = {this.changePassion.bind(this)} passion={ this.state.passion }></Passion>
+            <Passion changePassionProp = {this.changePassion.bind(this)} passionProp={ this.state.passion }></Passion>
 
           </div >
         );
