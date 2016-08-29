@@ -4,9 +4,7 @@ import ReactDOM from "react-dom";
 import App from './components/App';
 
 ReactDOM.render(
-        <App propX="Mr. X in Bombay" passion="Singing">
-            <span>Rishabh</span>
-            <span>Pranav</span>
+        <App passion="Singing">
         </App>,
     document.getElementById('app-container')
 );
